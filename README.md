@@ -31,7 +31,7 @@ and run your project.
 $ mkdir src; mkdir src/main; mkdir src/main/java; mkdir src/main/java/com; mkdir src/main/java/com/leehaney; touch src/main/java/com/leehaney/App.java
 
 - Run the following command (from the same folder as the pom.xml file)
-- $ mvn compile
+- $ <b>mvn compile</b>
 - $ mvn clean install ---> (If needed) The clean command will delete all previously compiled Java.class files and resources.
 - $ mvn exec:java -Dexec.mainClass="com.leehaney.App"
 

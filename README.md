@@ -41,7 +41,7 @@ You should see "Hello World" on the screen
 
 # How to use this project
 - Inside the my_app directory (contains pom.xml file), run the following commands:
-- $ <b>mvn compile</b> &nbsp; --> a new "target" folder will be created.
+- $ <b>mvn compile</b> &nbsp;&nbsp;&nbsp; --> a new "target" folder will be created.
 - $ <b>mvn exec:java -Dexec.mainClass="com.leehaney.App"</b>
 - In the browser, type in: localhost:4567/hello
 - You should see "Hello World" on the screen

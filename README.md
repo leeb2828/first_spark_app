@@ -32,7 +32,7 @@ $ mkdir src; mkdir src/main; mkdir src/main/java; mkdir src/main/java/com; mkdir
 
 - Run the following command (from the same folder as the pom.xml file)
 - $ <b>mvn compile</b>
-- $ <b>mvn clean install</b> &nbsp;---> (If needed) The clean command will delete all previously compiled Java.class files and resources.
+- $ <b>mvn clean install</b> &nbsp;&nbsp;&nbsp;---> (If needed) The clean command will delete all previously compiled Java.class files and resources.
 - $ <b>mvn exec:java -Dexec.mainClass="com.leehaney.App"</b>
 
 
@@ -41,7 +41,7 @@ You should see "Hello World" on the screen
 
 # How to use this project
 - Inside the my_app directory (contains pom.xml file), run the following commands:
-- $ <b>mvn compile</b> &nbsp;&nbsp;&nbsp; --> a new "target" folder will be created.
+- $ <b>mvn compile</b> &nbsp;&nbsp;&nbsp; ---> a new "target" folder will be created.
 - $ <b>mvn exec:java -Dexec.mainClass="com.leehaney.App"</b>
 - In the browser, type in: localhost:4567/hello
 - You should see "Hello World" on the screen

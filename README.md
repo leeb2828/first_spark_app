@@ -44,13 +44,13 @@ You should see "Hello World" on the screen
 - Inside the my_app directory (contains pom.xml file), run the following commands:
 - $ <b>mvn compile</b> &nbsp;&nbsp;&nbsp; ---> a new "target" folder will be created.
 - $ <b>mvn exec:java -Dexec.mainClass="com.leehaney.App"</b>
-- In the browser, type in: <br />localhost:4567/hello
-- You should see "Hello World" on the screen
+- In the browser, type in <br>localhost:4567/hello
+You should see "Hello World" on the screen
 
 
 If you see the following error message:
 
-SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".<br />
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".<br>
 SLF4J: Defaulting to no-operation (NOP) logger implementation<br>
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.<br>
 

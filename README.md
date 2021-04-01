@@ -3,7 +3,12 @@ for this project, I am using
 - Maven Build Tool
 - Visual Studio Code
 
-## Instructions for creating a hello world program using the Spark Framework (sparkjava.com).
+## What is Spark?
+Spark is a Micro-framework that allows you to spin up a web server. Do not confuse the "Spark" framework with the database "Apache Spark".
+They just happen to share the same name.<br />
+<b>Documentation<b>: http://sparkjava.com/ 
+
+## Instructions for creating a hello world program using the Spark Framework.
 
 - Create a folder called "first_spark_app"
 - Navigate to the "first_spark_app" directory from the terminal.
@@ -12,7 +17,7 @@ Inside the first_spark_app directory:
 - Create a new directory called "my_app" and navigate to that directory from the terminal.
 - Inside the my_app directory, create a pom.xml file.
 
-- Go to the Java Spark documentation at http://sparkjava.com/tutorials/maven-setup and copy their example of a pom.xml file into your own. 
+- Go to the documentation at http://sparkjava.com/tutorials/maven-setup and copy their example of a pom.xml file into your own. 
 
 - Edit the groupid to say "my_app" and groupid to say "com.leehaney" (add your own name instead of mine). Your artifactid is the root folder of your project. Your root
 folder is what contains your pom.xml file and src folder. It is where you will compile
@@ -37,7 +42,8 @@ $ mkdir src; mkdir src/main; mkdir src/main/java; mkdir src/main/java/com; mkdir
 <br />
 TIP: Run this command to make it so you only have to type "run" in order to run the program:<br />
 - $ <b>alias run='mvn exec:java -Dexec.mainClass="com.leehaney.App"' <br />
-- $ run
+- $ run <br>
+<b>NOTE: Make sure the top of the App.java file includes "package com.leehaney;" <br />
 
 
 In the browser, type in: localhost:4567/hello

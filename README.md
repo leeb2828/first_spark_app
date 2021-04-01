@@ -36,7 +36,7 @@ $ mkdir src; mkdir src/main; mkdir src/main/java; mkdir src/main/java/com; mkdir
 - $ <b>mvn exec:java -Dexec.mainClass="com.leehaney.App"</b>
 <br />
 TIP: Run this command to make it so you only have to type "run" in order to run the program:<br />
-- $ <b>alias run='mvn exec:java -Dexec.mainClass="com.leehaney.App"'
+- $ <b>alias run='mvn exec:java -Dexec.mainClass="com.leehaney.App"' <br />
 - $ run
 
 

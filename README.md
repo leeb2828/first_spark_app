@@ -34,6 +34,10 @@ $ mkdir src; mkdir src/main; mkdir src/main/java; mkdir src/main/java/com; mkdir
 - $ <b>mvn compile</b>
 - $ <b>mvn clean install</b> &nbsp;&nbsp;&nbsp;---> (If needed) The clean command will delete all previously compiled Java.class files and resources.
 - $ <b>mvn exec:java -Dexec.mainClass="com.leehaney.App"</b>
+<br />
+TIP: Run this command to make it so you only have to type "run" in order to run the program:<br />
+- $ <b>alias run='mvn exec:java -Dexec.mainClass="com.leehaney.App"'
+- $ run
 
 
 In the browser, type in: localhost:4567/hello

@@ -72,3 +72,29 @@ For example, add the following to your pom.xml dependencies:
             <artifactId>slf4j-jdk14</artifactId>
             <version>1.7.30</version>
         </dependency>
+        
+<br />
+If you are using Gradle as your build tool instead, this gradle file should work for you: <br />
+
+        plugins {
+            id 'java'
+        }
+
+        group 'com.leehaney'
+        version '1.0-SNAPSHOT'
+
+        repositories {
+            mavenCentral()
+        }
+
+        dependencies {
+            compile 'com.sparkjava:spark-core:2.9.3'
+            compile group: 'org.slf4j', name: 'slf4j-jdk14', version: '1.7.29'
+            testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+            testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+        }
+
+        test {
+            useJUnitPlatform()
+        }
+

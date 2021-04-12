@@ -35,6 +35,17 @@ and run your project.
 - Add the following directories and java file with these commands (from the my_app directory):
 $ mkdir src; mkdir src/main; mkdir src/main/java; mkdir src/main/java/com; mkdir src/main/java/com/leehaney; touch src/main/java/com/leehaney/App.java
 
+### Add this code to your App.java file
+        package com.leehaney;
+
+        import static spark.Spark.*;
+
+        public class App {
+            public static void main(String[] args) {
+                get("/hello", (req, res) -> "Hello World");
+            }
+        }
+
 - Run the following command (from the same folder as the pom.xml file)
 - $ <b>mvn compile</b>
 - $ <b>mvn clean install</b> &nbsp;&nbsp;&nbsp;---> (If needed) The clean command will delete all previously compiled Java.class files and resources.

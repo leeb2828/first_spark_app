@@ -19,7 +19,7 @@ Inside the first_spark_app directory:
 
 - Go to the documentation at http://sparkjava.com/tutorials/maven-setup and copy their example of a pom.xml file into your own. 
 
-- Edit the groupid to say "my_app" and groupid to say "com.leehaney" (add your own name instead of mine). Your artifactid is the root folder of your project. Your root
+- Edit the artifactid to say "my_app" and groupid to say "com.leehaney" (add your own name instead of mine). Your artifactid is the root folder of your project. Your root
 folder is what contains your pom.xml file and src folder. It is where you will compile
 and run your project.
 

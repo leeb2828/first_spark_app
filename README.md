@@ -1,9 +1,6 @@
 # HELLO WORLD SPARK APP
 
-Type in this url into your browser:
-![web_page_url](url.png)
-<br /><br />
-Photo gallery is displayed:
+Hello world is displayed in your browser after you type in http://localhost/hello 
 ![web_page](webpage.png)
 
 For this project, I am using

@@ -73,13 +73,12 @@ They just happen to share the same name.<br />
 
 Inside the first_spark_app directory:
 - Create a new directory called "my_app" and navigate to that directory from the terminal.
-- Inside the my_app directory, create a pom.xml file.
+- Inside the my_app directory, create a pom.xml file. I am not using the mvn archetype commands for this. I am creating this
+project from scratch.
 
 - Go to the documentation at http://sparkjava.com/tutorials/maven-setup and copy their example of a pom.xml file into your own. 
 
-- Edit the artifactid to say "my_app" and groupid to say "com.leehaney" (add your own name instead of mine). Your artifactid is the root folder of your project. Your root
-folder is what contains your pom.xml file and src folder. It is where you will compile
-and run your project.
+- Edit the artifactid to say "my_app" and groupid to say "com.leehaney" (add your own name instead of mine). Your artifactid is the root folder of your project. Your root folder is what contains your pom.xml file and src folder. It is where you will compile and run your project.
 
 - Be sure to include the following dependency to your pom.xml dependencies:
 

@@ -35,8 +35,20 @@ You can easily generate a maven project with this command, making your root dire
 $ mvn archetype:generate -B -DgroupId=com.myFitnessApp -DartifactId=projectRootFolder
 ```
 Keep in mind, if you create your project with this command, do not rename the App.java file. Your project will not compile if you rename App.java.<br />
-
-Be sure to include an slf4j logging implementation in your maven dependencies in the pom.xml file. To compile it:
+Now, check which version of Java you jave with the following command:
+```
+$ java --version
+```
+Since I have java version 11, I will add the following code to my pom.xml file:
+```
+<properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+ </properties>
+```
+If you don’t, you will get the error message <i>“Source option 5 is no longer supported. Use 6 or later”</i> when you try to compile your project.
+Be sure to include an slf4j logging implementation in your maven dependencies in the pom.xml file. <br />
+Now... to compile this project (run this command from the same directory as your pom.xml file):
 ```
 $ mvn compile
 ```

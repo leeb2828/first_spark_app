@@ -35,7 +35,7 @@ You can easily generate a maven project with this command, making your root dire
 $ mvn archetype:generate -B -DgroupId=com.myFitnessApp -DartifactId=projectRootFolder
 ```
 Keep in mind, if you create your project with this command, do not rename the App.java file. Your project will not compile if you rename App.java.<br />
-Now, check which version of Java you jave with the following command:
+Now, check which version of Java you have with the following command:
 ```
 $ java --version
 ```

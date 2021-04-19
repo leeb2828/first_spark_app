@@ -58,7 +58,7 @@ To create a .jar file inside the target directory, run this command:
 $ mvn package
 ```
 Run a goal from the "execute" plugin (exec), the goal name is Java. <br />
-Format for the command: Dexec.mainClass="<groupId>.<className>" <br />
+Format for the command: Dexec.mainClass="groupId.className" <br />
 To run the program:
 ```
 $ mvn exec:java -Dexec.mainClass="com.myFitnessApp.App"

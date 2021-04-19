@@ -7,6 +7,20 @@ For this project, I am using
 - Maven Build Tool
 - Visual Studio Code
 
+## What is Maven?
+Maven is a build tool.
+
+#### Installing Maven on MacOS
+You can use Homebrew:
+```
+$ brew install maven
+```
+#### Installing Maven on Linux
+```
+$ sudo apt-get install maven
+```
+Or you can just use this link: http://maven.apache.org/install.html 
+
 ## What is Spark?
 Spark is a Micro-framework that allows you to spin up a web server. Do not confuse the "Spark" framework with the database "Apache Spark".
 They just happen to share the same name.<br />
@@ -50,18 +64,31 @@ $ mkdir src; mkdir src/main; mkdir src/main/java; mkdir src/main/java/com; mkdir
             }
         }
 
-- Run the following command (from the same folder as the pom.xml file)
-- $ <b>mvn compile</b>
-- $ <b>mvn clean install</b> &nbsp;&nbsp;&nbsp;---> (If needed) The clean command will delete all previously compiled Java.class files and resources.
-- $ <b>mvn exec:java -Dexec.mainClass="com.leehaney.App"</b>
-<br />
-TIP: Run this command to make it so you only have to type "run" in order to run the program:<br />
-- $ <b>alias run='mvn exec:java -Dexec.mainClass="com.leehaney.App"' <br />
-- $ run <br>
-<b>NOTE: Make sure the top of the App.java file includes "package com.leehaney;" <br />
+Run the following command (from the same folder as the pom.xml file) to compile.
+```
+$ mvn compile
+```
+(If needed) The clean command will delete all previously compiled Java.class files and resources.
+```
+$ mvn clean install
+```
+This command will run your application
+```
+$ mvn exec:java -Dexec.mainClass="com.leehaney.App"
+```
+
+TIP: Run this command to make it so you only have to type "run" in order to run the program from the terminal:
+```
+$ alias run='mvn exec:java -Dexec.mainClass="com.leehaney.App"' 
+$ run 
+```
+NOTE: Make sure the top of the App.java file includes "package com.leehaney;" <br />
 
 
-In the browser, type in: localhost:4567/hello
+In the browser, type in: 
+```
+localhost:4567/hello
+```
 You should see "Hello World" on the screen
 
 # How to use this project

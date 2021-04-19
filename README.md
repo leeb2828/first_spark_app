@@ -8,7 +8,40 @@ For this project, I am using
 - Visual Studio Code
 
 ## What is Maven?
-Maven is a build tool.
+Maven is a build tool. It automates everything related to building and organizing a project, it uses a pom.xml file to manage 
+dependencies (third party libraries your project depends on). When using a libary that isn't part of the Java Standard Library, you
+need more than an "import" statement at the top of your java file. You have to either download the jar file or add it as a dependency 
+to your pom.xml file (if you are using maven build tool). 
+You can easily generate a maven project with this command, making your root directory (or artifactId) "projectRootFolder" and your groupid "com.myFitnessApp" :
+```
+$ mvn archetype:generate -B -DgroupId=com.myFitnessApp -DartifactId=projectRootFolder
+```
+Keep in mind, if you create your project with this command, do not rename the App.java file. Your project will not compile if you rename App.java.<br />
+
+To compile it:
+```
+$ mvn compile
+```
+You will notice a newly created "target" directory that contains all of your .class files, such as App.class <br />
+To create a .jar file inside the target directory, run this command:
+```
+$ mvn package
+```
+Run a goal from the "execute" plugin (exec), the goal name is Java. -Dexec.mainClass="<groupId.className>" <br />
+To run the program:
+```
+$ mvn exec:java -Dexec.mainClass="com.myFitnessApp.App"
+```
+Type in this command to go to the directory where Maven is saving all the JARS of the dependencies you've used so far:
+```
+$ cd ~/.m2
+```
+You can run maven commands from the terminal, however, all the major IDEs have built in support for Maven so you don't have to know all the maven commands. <br />
+
+#### check if maven is already installed
+```
+$ mvn --version
+```
 
 #### Installing Maven on MacOS
 You can use Homebrew:
@@ -20,7 +53,9 @@ $ brew install maven
 $ sudo apt-get install maven
 ```
 Or you can just use this link: http://maven.apache.org/install.html 
-
+<br />
+<br />
+<br />
 ## What is Spark?
 Spark is a Micro-framework that allows you to spin up a web server. Do not confuse the "Spark" framework with the database "Apache Spark".
 They just happen to share the same name.<br />

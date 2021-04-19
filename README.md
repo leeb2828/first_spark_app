@@ -12,6 +12,24 @@ Maven is a build tool. It automates everything related to building and organizin
 dependencies (third party libraries your project depends on). When using a libary that isn't part of the Java Standard Library, you
 need more than an "import" statement at the top of your java file. You have to either download the jar file or add it as a dependency 
 to your pom.xml file (if you are using maven build tool). 
+
+#### check if maven is already installed
+```
+$ mvn --version
+```
+
+#### Installing Maven on MacOS
+You can use Homebrew:
+```
+$ brew install maven
+```
+#### Installing Maven on Linux
+```
+$ sudo apt-get install maven
+```
+Or you can just use this link: http://maven.apache.org/install.html 
+
+#### Creating a maven project
 You can easily generate a maven project with this command, making your root directory (or artifactId) "projectRootFolder" and your groupid "com.myFitnessApp" :
 ```
 $ mvn archetype:generate -B -DgroupId=com.myFitnessApp -DartifactId=projectRootFolder
@@ -32,30 +50,16 @@ To run the program:
 ```
 $ mvn exec:java -Dexec.mainClass="com.myFitnessApp.App"
 ```
-Type in this command to go to the directory where Maven is saving all the JARS of the dependencies you've used so far:
+Type in this command to go to the directory where Maven is saving all the JARS of the dependencies you've used so far (if you want to see it):
 ```
 $ cd ~/.m2
 ```
 You can run maven commands from the terminal, however, all the major IDEs have built in support for Maven so you don't have to know all the maven commands. <br />
 
-#### check if maven is already installed
-```
-$ mvn --version
-```
+<br />
+<br />
+<br />
 
-#### Installing Maven on MacOS
-You can use Homebrew:
-```
-$ brew install maven
-```
-#### Installing Maven on Linux
-```
-$ sudo apt-get install maven
-```
-Or you can just use this link: http://maven.apache.org/install.html 
-<br />
-<br />
-<br />
 ## What is Spark?
 Spark is a Micro-framework that allows you to spin up a web server. Do not confuse the "Spark" framework with the database "Apache Spark".
 They just happen to share the same name.<br />

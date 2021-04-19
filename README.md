@@ -90,7 +90,9 @@ project from scratch.
 
 
 - Add the following directories and java file with these commands (from the my_app directory):
+- ```
 $ mkdir src; mkdir src/main; mkdir src/main/java; mkdir src/main/java/com; mkdir src/main/java/com/leehaney; touch src/main/java/com/leehaney/App.java
+```
 
 ### Add this code to your App.java file
         package com.leehaney;

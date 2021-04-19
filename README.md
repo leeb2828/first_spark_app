@@ -18,7 +18,7 @@ $ mvn archetype:generate -B -DgroupId=com.myFitnessApp -DartifactId=projectRootF
 ```
 Keep in mind, if you create your project with this command, do not rename the App.java file. Your project will not compile if you rename App.java.<br />
 
-To compile it:
+Be sure to include an slf4j logging implementation in your maven dependencies in the pom.xml file. To compile it:
 ```
 $ mvn compile
 ```

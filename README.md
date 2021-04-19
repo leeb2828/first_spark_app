@@ -77,17 +77,24 @@ You can run maven commands from the terminal, however, all the major IDEs have b
 Spark is a Micro-framework that allows you to spin up a web server. Do not confuse the "Spark" framework with the database "Apache Spark".
 They just happen to share the same name.<br />
 <b>Documentation<b>: http://sparkjava.com/ 
+<br />
+## Step by step instructions for creating a hello world program using the Spark Framework from scratch.
 
-## Step by step instructions for creating a hello world program using the Spark Framework.
-
-- Create a folder called "first_spark_app"
-- Navigate to the "first_spark_app" directory from the terminal.
+Create a folder called "first_spark_app"
+```
+$ mkdir first_spark_app
+```
+Navigate to the "first_spark_app" directory from the terminal.
+```
+$ cd first_spark_app
+```
 
 Inside the first_spark_app directory:
 - Create a new directory called "my_app" and navigate to that directory from the terminal.
-- Inside the my_app directory, create a pom.xml file. I am not using the mvn archetype commands for this. I am creating this
-project from scratch.
-
+- Inside the my_app directory, create a pom.xml file:
+```
+$ touch pom.xml
+```
 - Go to the documentation at http://sparkjava.com/tutorials/maven-setup and copy their example of a pom.xml file into your own. 
 
 - Edit the artifactid to say "my_app" and groupid to say "com.leehaney" (add your own name instead of mine). Your artifactid is the root folder of your project. Your root folder is what contains your pom.xml file and src folder. It is where you will compile and run your project.

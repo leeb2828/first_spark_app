@@ -1,6 +1,6 @@
 # HELLO WORLD SPARK APP
 
-"Hello World" is displayed in your browser after you type in http://localhost/hello 
+"Hello World" is displayed in your browser after you type in http://localhost:4567/hello 
 ![web_page](webpage.png)
 
 For this project, I am using

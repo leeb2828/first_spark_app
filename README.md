@@ -145,6 +145,11 @@ TIP: Run this command to make it so you only have to type "run" in order to run 
 $ alias run='mvn exec:java -Dexec.mainClass="com.leehaney.App"' 
 $ run 
 ```
+Here is another way to make this easier. Add this line of code inside of your <properties></properties> tags:
+```
+<!-- this allows you to run program with only $ mvn exec:java -->
+<exec.mainClass>com.leehaney.App</exec.mainClass>
+```
 NOTE: Make sure the top of the App.java file includes "package com.leehaney;" <br />
 
 

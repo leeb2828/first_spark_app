@@ -145,7 +145,7 @@ TIP: Run this command to make it so you only have to type "run" in order to run 
 $ alias run='mvn exec:java -Dexec.mainClass="com.leehaney.App"' 
 $ run 
 ```
-Here is another way to make this easier. Add this line of code inside of your <properties></properties> tags:
+Here is another way to make this easier. Add this line of code inside of your "properties" tags in your pom.xml file:
 ```
 <!-- this allows you to run program with only $ mvn exec:java -->
 <exec.mainClass>com.leehaney.App</exec.mainClass>
